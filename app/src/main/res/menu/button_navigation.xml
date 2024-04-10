@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/myActivity"
+        android:checked="true"
+        android:icon="@drawable/ic_activity"
+        android:title="Активность" />
+    <item
+        android:id="@+id/workout"
+        android:icon="@drawable/ic_trainig"
+        android:title="Тренировки" />
+    <item
+        android:id="@+id/timer"
+        android:icon="@drawable/ic_timer"
+        android:title="Таймер" />
+    <item
+        android:id="@+id/nutrition"
+        android:icon="@drawable/ic_nutrition"
+        android:title="Питание" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Настройки" />
+
+</menu>

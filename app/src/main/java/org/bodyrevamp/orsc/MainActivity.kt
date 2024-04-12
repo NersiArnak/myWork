@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        
+
 
         setSupportActionBar(binding.toolbar)
 
@@ -39,27 +39,34 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigation.setOnNavigationItemSelectedListener { item ->
 
             when (item.itemId) {  // Определяет, какой элемент был выбран
-                R.id.myActivity -> {  // Если выбран фрагмент "TrainingFragment"
-                    navController.navigate(  // Переходит к указанному фрагменту
-                        R.id.TrainingsFragment, null,  // Использует идентификатор фрагмента и передает навигационные параметры (null в данном случае)
-                        NavOptions.Builder()  // Создает новый объект Builder для настройки параметров навигации
-                            .setLaunchSingleTop(true)  // Указывает, что фрагмент должен быть запущен в одиночном режиме верхнего уровня
-                            .setPopUpTo(R.id.TrainingsFragment, true)  // Указывает, что при переходе на этот фрагмент нужно удалить из стека навигации все предыдущие экраны
-                            .build()  // Строит объект NavOptions
+                R.id.myResults -> {
+                    navController.navigate(
+                        R.id.ResultsFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .setPopUpTo(R.id.ResultsFragment, true)
+                            .build()
                     )
                 }
-
-                R.id.workout -> {
-                    binding.textMain.text = "Тренировки"
-                    true
+                R.id.training -> {
+                    navController.navigate(
+                        R.id.TrainingsFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .build()
+                    )
                 }
                 R.id.timer -> {
                     binding.textMain.text = "Таймер"
                     true
                 }
-                R.id.nutrition-> {
-                    binding.textMain.text = "Питание"
-                    true
+                R.id.nutrition -> {
+                    navController.navigate(
+                        R.id.NutritionFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .build()
+                    )
                 }
                 R.id.settings -> {
                     binding.textMain.text = "Настройки"

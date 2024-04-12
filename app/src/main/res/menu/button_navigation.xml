@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/myActivity"
+        android:id="@+id/myResults"
         android:checked="true"
-        android:icon="@drawable/ic_activity"
+        android:icon="@drawable/ic_results"
         android:title="Активность" />
     <item
-        android:id="@+id/workout"
-        android:icon="@drawable/ic_trainig"
+        android:id="@+id/training"
+        android:icon="@drawable/ic_training"
         android:title="Тренировки" />
     <item
         android:id="@+id/timer"

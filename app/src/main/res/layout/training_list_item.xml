@@ -7,11 +7,12 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginVertical="10dp"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="25dp"
         app:cardBackgroundColor="@color/grey">
 
         <LinearLayout
@@ -25,7 +26,7 @@
                 android:id="@+id/titleTraining"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="18dp"
                 tools:text="Бег по лесу" />
@@ -38,8 +39,8 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="6dp"
                     android:text="План:" />
@@ -49,7 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#696969"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:layout_marginTop="10dp"
                     tools:text="Интервальный бег 10 мин средний темп, затем 2 минуты ускорение и так 5 кругов" />
 
@@ -63,8 +64,8 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="6dp"
                     android:text="Цель:" />
@@ -74,7 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#696969"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:layout_marginTop="10dp"
                     tools:text="бежать каждый круг быстрее предыдущего" />
             </LinearLayout>
@@ -87,8 +88,9 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
+
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="6dp"
                     android:text="Время:" />
@@ -98,7 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#696969"
-                    android:textSize="14sp"
+                    android:textSize="16sp"
                     android:layout_marginTop="10dp"
                     tools:text="не более 20 мин" />
             </LinearLayout>

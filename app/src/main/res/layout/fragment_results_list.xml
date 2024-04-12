@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/specific_blue"
+        android:text="Результаты за день"
+        />
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Подвижность"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="172/340 ккал"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Упражнения"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="33/30 мин"
+            android:textColor="@color/green"/>
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Разминка"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="15/15 мин"
+            android:textColor="@color/dar_blue"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шаги"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/specific_blue"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 690"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Дистнация"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/specific_blue"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2,88 км"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/specific_blue"
+        android:text="История"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="17dp"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stretching"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Восстановление"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:textColor="@color/specific_blue"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="309 ккал"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weightlifting"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Функионально-силовая"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:textColor="@color/specific_blue"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="677 ккал"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

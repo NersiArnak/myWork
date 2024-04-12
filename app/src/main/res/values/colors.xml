@@ -4,6 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="specific_blue"> #00457E</color>
     <color name="navi_blue">#2F70AF</color>
-    <color name="grey"> #adadac</color>
+    <color name="grey"> #c7ced4</color>
     <color name="color_primary">#515151</color>
+    <color name="red"> #f00a0a</color>
+    <color name="green"> #31b528</color>
+    <color name="dar_blue"> #2a90b5</color>
 </resources>

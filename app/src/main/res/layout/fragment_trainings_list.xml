@@ -27,11 +27,11 @@
             android:layout_height="50dp"
             android:layout_marginBottom="24dp"
             android:layout_marginEnd="16dp"
-            android:background="@color/white"
+            android:background="@drawable/button_add_backgrond"
             android:paddingBottom="2dp"
             android:text="+"
             android:textSize="36sp"
-            android:textColor="@color/black"
+            android:textColor="@color/specific_blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

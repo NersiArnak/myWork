@@ -19,4 +19,14 @@
         android:label="Питание"
         android:name="org.bodyrevamp.orsc.nutrition.NutritionListFragment"
         />
+    <fragment
+        android:id="@+id/TimerFragment"
+        android:label="Таймер"
+        android:name="org.bodyrevamp.orsc.timer.TimerListFragment"
+        />
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:label="Настройки"
+        android:name="org.bodyrevamp.orsc.settings.SettingsListFragment"
+        />
 </navigation>

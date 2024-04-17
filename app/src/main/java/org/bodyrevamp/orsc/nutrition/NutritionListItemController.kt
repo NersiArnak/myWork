@@ -1,6 +1,7 @@
 package org.bodyrevamp.orsc.nutrition
 
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import org.bodyrevamp.orsc.R
@@ -20,8 +21,8 @@ class NutritionListItemController : BindableItemController<NutritionListItem, Nu
         R.layout.nutrition_list_item
     ) {
         override fun bind(data: NutritionListItem) {
-            Glide.with(itemView.context).load(data.image).into(itemView.findViewById(R.id.imageNutrition))
-
+//            Glide.with(itemView.context).load(data.image).into(itemView.findViewById(R.id.imageNutrition))
+            itemView.findViewById<ImageView>(R.id.imageNutrition).setImageResource(data.image)
             itemView.findViewById<TextView>(R.id.titleNutrition).text = data.title
             itemView.findViewById<TextView>(R.id.descriptionNutrition).text = data.description
         }

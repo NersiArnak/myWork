@@ -22,10 +22,11 @@
             android:paddingVertical="10dp">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_marginTop="5dp"
+              android:layout_gravity="center"
                 android:id="@+id/imageNutrition"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="230dp"
+                android:layout_marginTop="5dp"
                 tools:src="@drawable/salad" />
 
             <androidx.appcompat.widget.AppCompatTextView

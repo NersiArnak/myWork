@@ -1,9 +1,7 @@
 package org.bodyrevamp.orsc
 
 import android.os.Bundle
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavOptions
@@ -18,27 +16,23 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         setSupportActionBar(binding.toolbar)
 
         window.statusBarColor = ContextCompat.getColor(this, R.color.navi_blue)
         window.navigationBarColor = ContextCompat.getColor(this, R.color.specific_blue)
 
-
-        val navController = findNavController(R.id.nav_host_fragment_content_main)  // Находит контроллер навигации по идентификатору фрагмента навигации
-        appBarConfiguration = AppBarConfiguration(navController.graph)  // Создает конфигурацию панели действий на основе графа навигации
-        setupActionBarWithNavController(navController, appBarConfiguration)  // Настраивает панель действий для работы с контроллером навигации
+        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        appBarConfiguration = AppBarConfiguration(navController.graph)
+        setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.bottomNavigation.setOnNavigationItemSelectedListener { item ->
-
-            when (item.itemId) {  // Определяет, какой элемент был выбран
+            when (item.itemId) {
                 R.id.myResults -> {
                     navController.navigate(
                         R.id.ResultsFragment, null,
@@ -47,6 +41,7 @@ class MainActivity : AppCompatActivity() {
                             .setPopUpTo(R.id.ResultsFragment, true)
                             .build()
                     )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.results_main_text)
                 }
                 R.id.training -> {
                     navController.navigate(
@@ -55,10 +50,16 @@ class MainActivity : AppCompatActivity() {
                             .setLaunchSingleTop(true)
                             .build()
                     )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.training_main_text)
                 }
                 R.id.timer -> {
-                    binding.textMain.text = "Таймер"
-                    true
+                    navController.navigate(
+                        R.id.TimerFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .build()
+                    )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.timer_main_text)
                 }
                 R.id.nutrition -> {
                     navController.navigate(
@@ -67,10 +68,16 @@ class MainActivity : AppCompatActivity() {
                             .setLaunchSingleTop(true)
                             .build()
                     )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.nutrition_main_text)
                 }
                 R.id.settings -> {
-                    binding.textMain.text = "Настройки"
-                    true
+                    navController.navigate(
+                        R.id.SettingsFragment, null,
+                        NavOptions.Builder()
+                            .setLaunchSingleTop(true)
+                            .build()
+                    )
+                    binding.toolbar.findViewById<TextView>(R.id.text_main).text = getString(R.string.settings_main_text)
                 }
             }
             true

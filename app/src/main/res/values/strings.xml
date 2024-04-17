@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">Training</string>
+    <string name="app_name">Trainig</string>
+    <string name="place_holder_time">00:00:00</string>
+    <string name="reset_text">ОБНОВИТЬ</string>
+    <string name="start_text">СТАРТ</string>
+    <string name="stop_text">СТОП</string>
+    <string name="custom_name">Фамилия Имя</string>
+    <string name="subscription">Ваша подписка</string>
+    <string name="type_of_subscription">Infinity 1 месяц</string>
+    <string name="next_payment">17.04.2024 слудующий платеж</string>
+    <string name="price">15.000 ₽</string>
+    <string name="result_text">Активность</string>
+    <string name="results_main_text">Моя активность</string>
+    <string name="training_main_text"> Тренировки</string>
+    <string name="timer_main_text"> Таймер </string>
+    <string name="nutrition_main_text"> Питание</string>
+    <string name="settings_main_text"> Настройки </string>
+
 </resources>
